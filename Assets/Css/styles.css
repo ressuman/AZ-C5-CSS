@@ -229,3 +229,56 @@ span {
   text-align: center;
   margin-bottom: 30px;
 }
+
+/* Working with both Flexbox and Grid */
+#flexgrid {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#flexgrid header {
+  height: 30px;
+  background-color: gray;
+  color: black;
+}
+
+#flexgrid .head {
+  height: 100px;
+  background-color: gray;
+}
+
+#flexgrid ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#flexgrid li {
+  background-color: gray;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px 100px;
+  gap: 20px;
+}
+
+main div {
+  background-color: gray;
+}
+
+main div:first-of-type {
+  grid-row: 1/4;
+}
+
+main div:last-of-type {
+  grid-row: 2/4;
+}
+
+#flexgrid footer {
+  background-color: gray;
+  height: 100px;
+}
